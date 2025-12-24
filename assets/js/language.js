@@ -156,7 +156,7 @@
         const browser = (navigator.language || "en").toLowerCase();
         if (browser.startsWith("ar")) return "ar";
 
-        return "en";
+        return "ar";
     };
 
     const applyDirection = (lang) => {
@@ -209,7 +209,7 @@
     };
 
     const setLanguage = (lang) => {
-        const normalized = normalizeLang(lang) || "en";
+        const normalized = normalizeLang(lang) || "ar";
         localStorage.setItem(STORAGE_KEY, normalized);
 
         applyDirection(normalized);
