@@ -3,9 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Osama Portfolio</title>
-    <meta name="robots" content="noindex, follow" />
-    <meta name="description" content="" />
+    <title>
+      Osama Algumaei - Full Stack .NET & Angular Developer | ASP.NET Core Web
+      API
+    </title>
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="Full Stack .NET & Angular Developer with 2+ years of professional experience building and modernizing enterprise web applications. Specialized in ASP.NET Core Web APIs, Angular (18–19), and SQL Server with a focus on legacy-to-modern migrations."
+    />
+    <meta
+      name="keywords"
+      content="Full Stack Developer, .NET Developer, ASP.NET Core, Web API, Angular 18, Angular 19, SQL Server, JWT, RBAC, Enterprise Applications, Legacy Modernization"
+    />
+    <meta name="author" content="Osama Algumaei" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -25,13 +36,26 @@
     <link rel="stylesheet" href="assets/css/vendor/aos.css" />
     <link rel="stylesheet" href="assets/css/plugins/feature.css" />
     <!-- Style css -->
-    <!-- <link rel="stylesheet" href="assets/css/hunto3.css"> -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <script
-      type="text/javascript"
-      src="https://me.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=pz8gv6vdjZpDSIF5ecK7IwJ6OAiiKOUbL1Vqa0Wzx5HmvnscFrCBNYT94EuhOZk-WK8Ix1ILX0QzTk4-JjAKBF-x_50fEYlZEoHwULcNkwQ"
-      charset="UTF-8"
-    ></script>
+    <style>
+      html[dir="rtl"] body {
+        direction: rtl;
+        text-align: right;
+      }
+
+      /* html[dir="rtl"] .primary-menu {
+        flex-direction: row-reverse;
+      } */
+
+      html[dir="rtl"] .social-share,
+      html[dir="rtl"] .skill-share {
+        flex-direction: row-reverse;
+      }
+
+      html[dir="rtl"] .section-title.text-left {
+        text-align: right !important;
+      }
+    </style>
   </head>
 
   <body
@@ -43,6 +67,8 @@
     <!-- Start Header -->
     <header
       class="rn-header haeder-default black-logo-version header--fixed header--sticky"
+      role="banner"
+      aria-label="Main site header"
     >
       <div
         class="header-wrapper rn-popup-mobile-menu m--0 row align-items-center"
@@ -52,7 +78,12 @@
           <div class="header-left">
             <div class="logo">
               <a href="index.html">
-                <img src="assets/images/logo/logo-dark5.png" alt="logo" />
+                <img
+                  src="assets/images/logo/logo-dark5.png"
+                  alt="Osama Algumaei - Full Stack Developer Logo"
+                  width="120"
+                  height="40"
+                />
               </a>
             </div>
           </div>
@@ -64,43 +95,90 @@
             <nav
               id="sideNav"
               class="mainmenu-nav navbar-example2 d-none d-xl-block onepagenav"
+              role="navigation"
+              aria-label="Main navigation"
+              style="margin-left: 52px"
             >
               <!-- Start Mainmanu Nav -->
-              <ul class="primary-menu nav nav-pills">
+              <ul class="primary-menu nav nav-pills" role="menubar">
                 <li class="nav-item current">
-                  <a class="nav-link" href="#home">Home</a>
+                  <a class="nav-link" href="#home" data-i18n="nav.home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#features">Features</a>
+                  <a class="nav-link" href="#features" data-i18n="nav.features"
+                    >Features</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#portfolio">Portfolio</a>
+                  <a
+                    class="nav-link"
+                    href="#portfolio"
+                    data-i18n="nav.portfolio"
+                    >Portfolio</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#resume">Resume</a>
+                  <a class="nav-link" href="#resume" data-i18n="nav.resume"
+                    >Resume</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#clients">Clients</a>
+                  <a class="nav-link" href="#clients" data-i18n="nav.clients"
+                    >Clients</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#pricing">Pricing</a>
+                  <a class="nav-link" href="#pricing" data-i18n="nav.pricing"
+                    >Pricing</a
+                  >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#blog">blog</a>
+                  <a class="nav-link" href="#blog" data-i18n="nav.blog">blog</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#contacts">Contact</a>
+                  <a class="nav-link" href="#contacts" data-i18n="nav.contact"
+                    >Contact</a
+                  >
+                </li>
+                <li
+                  class="nav-item"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-inline-start: 12px;
+                  "
+                >
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                    data-lang-switch
+                    data-lang="en"
+                    aria-label="Switch language to English"
+                    aria-pressed="false"
+                  >
+                    EN
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-sm btn-outline-secondary"
+                    data-lang-switch
+                    data-lang="ar"
+                    aria-label="تغيير اللغة إلى العربية"
+                    aria-pressed="false"
+                  >
+                    AR
+                  </button>
                 </li>
               </ul>
-              <!-- End Mainmanu Nav -->
             </nav>
             <!-- Start Header Right  -->
             <div class="header-right">
               <a
                 class="rn-btn"
                 target="_blank"
-                href="https://themeforest.net/checkout/from_item/33188244?license=regular"
-                ><span>BUY NOW</span></a
+                href="https://wa.me/967777808967"
+                ><span data-i18n="cta.buyNow">BUY NOW | WhatsApp Me</span></a
               >
               <div class="hamberger-menu d-block d-xl-none">
                 <i id="menuBtn" class="feather-menu humberger-menu"></i>
@@ -135,7 +213,7 @@
               </button>
             </div>
           </div>
-          <p class="discription">
+          <p class="discription" data-i18n="hero.description">
             I am a Full Stack web developer. I can provide clean code and pixel
             perfect design. I can also make the website more & more interactive
             with web animations.
@@ -144,35 +222,73 @@
         <div class="content">
           <ul class="primary-menu nav nav-pills onepagenav">
             <li class="nav-item current">
-              <a class="nav-link smoth-animation active" href="#home">Home</a>
+              <a
+                class="nav-link smoth-animation active"
+                href="#home"
+                data-i18n="nav.home"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#features">Features</a>
+              <a
+                class="nav-link smoth-animation"
+                href="#features"
+                data-i18n="nav.features"
+                >Features</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#portfolio"
+              <a
+                class="nav-link smoth-animation"
+                href="#portfolio"
+                data-i18n="nav.portfolio"
                 >Portfolio</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#resume">Resume</a>
+              <a
+                class="nav-link smoth-animation"
+                href="#resume"
+                data-i18n="nav.resume"
+                >Resume</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#clients">Clients</a>
+              <a
+                class="nav-link smoth-animation"
+                href="#clients"
+                data-i18n="nav.clients"
+                >Clients</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#pricing">Pricing</a>
+              <a
+                class="nav-link smoth-animation"
+                href="#pricing"
+                data-i18n="nav.pricing"
+                >Pricing</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#blog">blog</a>
+              <a
+                class="nav-link smoth-animation"
+                href="#blog"
+                data-i18n="nav.blog"
+                >blog</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link smoth-animation" href="#contacts">Contact</a>
+              <a
+                class="nav-link smoth-animation"
+                href="#contacts"
+                data-i18n="nav.contact"
+                >Contact</a
+              >
             </li>
           </ul>
           <!-- social sharea area -->
           <div class="social-share-style-1 mt--40">
-            <span class="title">find with me</span>
+            <span class="title" data-i18n="hero.findWithMe">find with me</span>
             <ul class="social-share d-flex liststyle">
               <li class="facebook">
                 <a href="#"
@@ -250,7 +366,12 @@
     </div>
     <!-- End Popup Mobile Menu  -->
 
-    <main class="main-page-wrapper">
+    <main
+      class="main-page-wrapper"
+      id="main-content"
+      role="main"
+      aria-label="Main content"
+    >
       <!-- Start Slider Area -->
       <div id="home" class="rn-slider-area">
         <div class="slide slider-style-1">
@@ -261,18 +382,27 @@
               >
                 <div class="content">
                   <div class="inner">
-                    <span class="subtitle">Welcome to my world</span>
+                    <span class="subtitle" data-i18n="hero.welcome"
+                      >Full Stack .NET &amp; Angular Developer</span
+                    >
                     <h1 class="title">
-                      Hi, I’m <span>Osama Abdu</span><br />
+                      <span data-i18n="hero.greeting">Hi, I’m</span>
+                      <span data-i18n="hero.Osama">Osama Algumaei</span><br />
                       <span class="header-caption" id="page-top">
                         <!-- type headline start-->
                         <span class="cd-headline clip is-full-width">
-                          <span>a </span>
+                          <span data-i18n="hero.prefix">a </span>
                           <!-- ROTATING TEXT -->
                           <span class="cd-words-wrapper">
-                            <b class="is-visible">Developer.</b>
-                            <b class="is-hidden">Professional Coder.</b>
-                            <b class="is-hidden">Developer.</b>
+                            <b class="is-visible" data-i18n="hero.role1"
+                              >.NET &amp; Angular Developer.</b
+                            >
+                            <b class="is-hidden" data-i18n="hero.role2"
+                              >ASP.NET Core API Developer.</b
+                            >
+                            <b class="is-hidden" data-i18n="hero.role3"
+                              >Enterprise Web Apps.</b
+                            >
                           </span>
                         </span>
                         <!-- type headline end -->
@@ -280,19 +410,22 @@
                     </h1>
 
                     <div>
-                      <p class="description">
-                        I am a Full Stack web developer. I can provide clean
-                        code and pixel perfect design. I can also make the
-                        website more & more interactive with web animations. A
-                        responsive design makes your website accessible to all
-                        users, regardless of their device.
+                      <p class="description" data-i18n="hero.description">
+                        I’m a full-stack developer with 2+ years of professional
+                        experience building and modernizing enterprise web
+                        applications. I specialize in ASP.NET Core Web APIs,
+                        Angular (18–19), and SQL Server, with a strong focus on
+                        transforming legacy systems into scalable, maintainable
+                        architectures.
                       </p>
                     </div>
                   </div>
                   <div class="row">
                     <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12">
                       <div class="social-share-inner-left">
-                        <span class="title">find with me</span>
+                        <span class="title" data-i18n="hero.findWithMe"
+                          >find with me</span
+                        >
                         <ul class="social-share d-flex liststyle">
                           <li class="facebook">
                             <a href="#"><i data-feather="facebook"></i></a>
@@ -310,7 +443,9 @@
                       class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-12 mt_mobile--30"
                     >
                       <div class="skill-share-inner">
-                        <span class="title">best skill on</span>
+                        <span class="title" data-i18n="hero.bestSkillOn"
+                          >best skill on</span
+                        >
                         <ul class="skill-share d-flex liststyle">
                           <li>
                             <img
@@ -368,8 +503,10 @@
                 data-aos-delay="100"
                 data-aos-once="true"
               >
-                <span class="subtitle">Features</span>
-                <h2 class="title">What I Do</h2>
+                <span class="subtitle" data-i18n="features.subtitle"
+                  >Features</span
+                >
+                <h2 class="title" data-i18n="features.title">What I Do Best</h2>
               </div>
             </div>
           </div>
@@ -394,12 +531,12 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="javascript:void(0)">Web Development</a>
+                      <a href="javascript:void(0)" data-i18n="service.web.title"
+                        >Enterprise Web Applications</a
+                      >
                     </h4>
-                    <p class="description">
-                      I create responsive and user-friendly web applications,
-                      ensuring that solutions are both high-quality and
-                      scalable.
+                    <p class="description" data-i18n="service.web.desc">
+                      ERP, HR, e-commerce, institute &amp; property systems.
                     </p>
                     <a class="read-more-button" href="#"
                       ><i class="feather-arrow-right"></i
@@ -425,11 +562,14 @@
                     <i data-feather="smartphone"></i>
                   </div>
                   <div class="content">
-                    <h4 class="title"><a href="#">App Development</a></h4>
-                    <p class="description">
-                      I design and develop mobile and desktop applications that
-                      deliver a seamless user experience across different
-                      platforms.
+                    <h4 class="title">
+                      <a href="#" data-i18n="service.app.title"
+                        >Backend Engineering</a
+                      >
+                    </h4>
+                    <p class="description" data-i18n="service.app.desc">
+                      ASP.NET Core APIs, authentication, RBAC, and performance
+                      optimization.
                     </p>
                     <a class="read-more-button" href="javascript:void(0)"
                       ><i class="feather-arrow-right"></i
@@ -454,11 +594,13 @@
                     <i data-feather="shield"></i>
                   </div>
                   <div class="content">
-                    <h4 class="title"><a href="#">Cybersecurity</a></h4>
-                    <p class="description">
-                      I prioritize data security by implementing best practices,
-                      conducting vulnerability assessments, and staying updated
-                      on the latest cybersecurity trends.
+                    <h4 class="title">
+                      <a href="#" data-i18n="service.cyber.title"
+                        >Frontend Development</a
+                      >
+                    </h4>
+                    <p class="description" data-i18n="service.cyber.desc">
+                      Angular (18–19), Bootstrap, responsive UI, and dashboards.
                     </p>
                     <a class="read-more-button" href="#"
                       ><i class="feather-arrow-right"></i
@@ -483,11 +625,13 @@
                     <i data-feather="list"></i>
                   </div>
                   <div class="content">
-                    <h4 class="title"><a href="#">Software Engineering</a></h4>
-                    <p class="description">
-                      I design, develop, and maintain software systems,
-                      integrating frontend and backend technologies for a
-                      seamless user experience.
+                    <h4 class="title">
+                      <a href="#" data-i18n="service.software.title"
+                        >Legacy Modernization</a
+                      >
+                    </h4>
+                    <p class="description" data-i18n="service.software.desc">
+                      VB.NET / Web Forms &rarr; ASP.NET Core Web API + Angular.
                     </p>
                     <a class="read-more-button" href="#"
                       ><i class="feather-arrow-right"></i
@@ -514,14 +658,13 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="#"
-                        >Social Media Marketing & Campaign Management</a
+                      <a href="#" data-i18n="service.social.title"
+                        >System Design</a
                       >
                     </h4>
-                    <p class="description">
-                      I craft and manage effective social media campaigns that
-                      enhance brand visibility, engage target audiences, and
-                      drive business growth.
+                    <p class="description" data-i18n="service.social.desc">
+                      Modular services, role-based permissions, and clean API
+                      contracts.
                     </p>
                     <a class="read-more-button" href="#"
                       ><i class="feather-arrow-right"></i
@@ -547,14 +690,12 @@
                   </div>
                   <div class="content">
                     <h4 class="title">
-                      <a href="#">WordPress Development & SEO</a>
+                      <a href="#" data-i18n="service.wordpress.title"
+                        >Problem Solving</a
+                      >
                     </h4>
-                    <p class="description">
-                      I develop and customize WordPress websites, ensuring they
-                      are visually appealing, functional, and optimized for
-                      performance. I optimize websites to improve their
-                      visibility in search engine results, driving organic
-                      traffic and increasing online presence.
+                    <p class="description" data-i18n="service.wordpress.desc">
+                      Debugging, refactoring, and improving existing codebases.
                     </p>
                     <a class="read-more-button" href="#"
                       ><i class="feather-arrow-right"></i
@@ -580,11 +721,13 @@
                     <i data-feather="users"></i>
                   </div>
                   <div class="content">
-                    <h4 class="title"><a href="#">Managing Teams</a></h4>
-                    <p class="description">
-                      I have experience leading and managing development teams,
-                      ensuring that projects are delivered on time and meet
-                      quality standards.
+                    <h4 class="title">
+                      <a href="#" data-i18n="service.teams.title"
+                        >Git &amp; GitHub</a
+                      >
+                    </h4>
+                    <p class="description" data-i18n="service.teams.desc">
+                      Branching, pull requests, and team collaboration.
                     </p>
                     <a class="read-more-button" href="#"
                       ><i class="feather-arrow-right"></i
@@ -611,14 +754,14 @@
                     <i data-feather="book-open"></i>
                   </div>
                   <div class="content">
-                    <h4 class="title"><a href="#">Web Frameworks</a></h4>
-                    <p class="description">
-                      Leveraging modern web frameworks, I build fast,
-                      responsive, and secure web applications that prioritize
-                      user experience and performance. With experience in
-                      frameworks like React, Vue.js, and ASP.NET Core, I develop
-                      scalable front-end and back-end solutions tailored to
-                      project requirements.
+                    <h4 class="title">
+                      <a href="#" data-i18n="service.frameworks.title"
+                        >Basic DevOps Awareness</a
+                      >
+                    </h4>
+                    <p class="description" data-i18n="service.frameworks.desc">
+                      Deployment awareness, environment configuration, and a
+                      production-ready mindset.
                     </p>
                     <a class="read-more-button" href="#"
                       ><i class="feather-arrow-right"></i
@@ -644,10 +787,10 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="section-title text-center">
-                <span class="subtitle"
-                  >Visit my portfolio and keep your feedback</span
+                <span class="subtitle" data-i18n="portfolio.subtitle"
+                  >Selected projects</span
                 >
-                <h2 class="title">My Portfolio</h2>
+                <h2 class="title" data-i18n="portfolio.title">Portfolio</h2>
               </div>
             </div>
           </div>
@@ -663,21 +806,27 @@
               <div
                 class="rn-portfolio"
                 data-bs-toggle="modal"
-                data-bs-target="#exampleModalCentersCV"
+                data-bs-target="#exampleModalCenter"
               >
                 <div class="inner">
                   <div class="thumbnail">
                     <a href="javascript:void(0)">
                       <img
                         src="assets/images/portfolio/Dashboard.png"
-                        alt="Personal Portfolio Images"
+                        alt="Dashboard Project - Web Application"
+                        loading="lazy"
+                        decoding="async"
+                        width="600"
+                        height="450"
                       />
                     </a>
                   </div>
                   <div class="content">
                     <div class="category-info">
                       <div class="category-list">
-                        <a href="javascript:void(0)">Development</a>
+                        <a href="javascript:void(0)"
+                          >ASP.NET Core • SQL Server • Angular</a
+                        >
                       </div>
                       <div class="meta">
                         <span
@@ -690,7 +839,7 @@
                     </div>
                     <h4 class="title">
                       <a href="javascript:void(0)"
-                        >The services provide for design
+                        >ERP System (Company Project)
                         <i class="feather-arrow-up-right"></i
                       ></a>
                     </h4>
@@ -717,14 +866,21 @@
                     <a href="javascript:void(0)">
                       <img
                         src="assets/images/portfolio/portfolio-02.jpg"
-                        alt="Personal Portfolio Images"
+                        alt="Portfolio Project"
+                        loading="lazy"
+                        decoding="async"
+                        width="600"
+                        height="450"
                       />
                     </a>
                   </div>
                   <div class="content">
                     <div class="category-info">
                       <div class="category-list">
-                        <a href="javascript:void(0)">Application</a>
+                        <a href="javascript:void(0)"
+                          >ASP.NET Core API • SQL Server • Angular • JWT •
+                          RBAC</a
+                        >
                       </div>
                       <div class="meta">
                         <span
@@ -737,7 +893,7 @@
                     </div>
                     <h4 class="title">
                       <a href="javascript:void(0)"
-                        >Mobile app landing design & app maintain<i
+                        >HR Management System<i
                           class="feather-arrow-up-right"
                         ></i
                       ></a>
@@ -772,7 +928,9 @@
                   <div class="content">
                     <div class="category-info">
                       <div class="category-list">
-                        <a href="javascript:void(0)">Photoshop</a>
+                        <a href="javascript:void(0)"
+                          >ASP.NET Core API • SQL Server • Angular</a
+                        >
                       </div>
                       <div class="meta">
                         <span
@@ -785,7 +943,7 @@
                     </div>
                     <h4 class="title">
                       <a href="javascript:void(0)"
-                        >Logo design creativity & Application
+                        >E-Commerce Application
                         <i class="feather-arrow-up-right"></i
                       ></a>
                     </h4>
@@ -819,7 +977,9 @@
                   <div class="content">
                     <div class="category-info">
                       <div class="category-list">
-                        <a href="javascript:void(0)">Figma</a>
+                        <a href="javascript:void(0)"
+                          >ASP.NET Core MVC • SQL Server</a
+                        >
                       </div>
                       <div class="meta">
                         <span
@@ -832,7 +992,7 @@
                     </div>
                     <h4 class="title">
                       <a href="javascript:void(0)"
-                        >Mobile app landing design & Services<i
+                        >Institute / Academy Management System<i
                           class="feather-arrow-up-right"
                         ></i
                       ></a>
@@ -867,7 +1027,9 @@
                   <div class="content">
                     <div class="category-info">
                       <div class="category-list">
-                        <a href="javascript:void(0)">Web Design</a>
+                        <a href="javascript:void(0)"
+                          >VB.NET/Web Forms → ASP.NET Core API + Angular</a
+                        >
                       </div>
                       <div class="meta">
                         <span
@@ -880,7 +1042,7 @@
                     </div>
                     <h4 class="title">
                       <a href="javascript:void(0)"
-                        >Design for tecnology & services<i
+                        >Legacy Modernization (Case Study)<i
                           class="feather-arrow-up-right"
                         ></i
                       ></a>
@@ -915,7 +1077,9 @@
                   <div class="content">
                     <div class="category-info">
                       <div class="category-list">
-                        <a href="javascript:void(0)">Web Design</a>
+                        <a href="javascript:void(0)"
+                          >JWT • RBAC • Permissions</a
+                        >
                       </div>
                       <div class="meta">
                         <span
@@ -928,7 +1092,7 @@
                     </div>
                     <h4 class="title">
                       <a href="javascript:void(0)"
-                        >App for tecnology & services<i
+                        >Fine‑Grained RBAC (Add/View/Edit/Delete per screen)<i
                           class="feather-arrow-up-right"
                         ></i
                       ></a>
@@ -949,8 +1113,19 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="section-title text-center">
-                <span class="subtitle">7+ Years of Experience</span>
-                <h2 class="title">My Resume</h2>
+                <span class="subtitle"
+                  >2+ Years of Professional Experience</span
+                >
+                <h2 class="title">Resume</h2>
+                <div class="mt--20">
+                  <a
+                    class="rn-btn"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCentersCV"
+                    ><span data-i18n="resume.viewCv">View CV</span></a
+                  >
+                </div>
               </div>
             </div>
           </div>
@@ -966,7 +1141,7 @@
                     role="tab"
                     aria-controls="education"
                     aria-selected="true"
-                    >education</a
+                    >Education</a
                   >
                 </li>
                 <li class="nav-item">
@@ -978,7 +1153,7 @@
                     role="tab"
                     aria-controls="professional"
                     aria-selected="false"
-                    >professional Skills</a
+                    >Professional Skills</a
                   >
                 </li>
                 <li class="nav-item">
@@ -990,7 +1165,7 @@
                     role="tab"
                     aria-controls="experience"
                     aria-selected="false"
-                    >experience</a
+                    >Experience</a
                   >
                 </li>
                 <li class="nav-item">
@@ -1002,7 +1177,7 @@
                     role="tab"
                     aria-controls="interview"
                     aria-selected="false"
-                    >interview</a
+                    >Career Goals</a
                   >
                 </li>
               </ul>
@@ -1021,26 +1196,30 @@
                       <!-- Start Skill List Area  -->
                       <div class="col-lg-6 col-md-12 col-12">
                         <div class="content">
-                          <span class="subtitle">2007 - 2010</span>
-                          <h4 class="maintitle">Education Quality</h4>
+                          <span class="subtitle">Education</span>
+                          <h4 class="maintitle">
+                            Self‑Taught Software Developer
+                          </h4>
                           <div class="experience-list">
                             <!-- Start Single List  -->
                             <div class="resume-single-list">
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Personal Portfolio April Fools</h4>
-                                    <span>University of DVI (1997 - 2001)</span>
+                                    <h4>Modern Web Technologies</h4>
+                                    <span
+                                      >Focused learning + real production
+                                      projects</span
+                                    >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.30/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  The education should be very interactual. Ut
-                                  tincidunt est ac dolor aliquam sodales.
-                                  Phasellus sed mauris hendrerit, laoreet sem
-                                  in, lobortis mauris hendrerit ante.
+                                  Self‑taught developer focused on enterprise
+                                  systems, clean architectures, and real‑world
+                                  production delivery.
                                 </p>
                               </div>
                             </div>
@@ -1051,20 +1230,20 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Examples Of Personal Portfolio</h4>
+                                    <h4>.NET &amp; Angular Track</h4>
                                     <span
-                                      >College of Studies (2000 - 2002)</span
+                                      >Structured courses + hands‑on company
+                                      projects</span
                                     >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.50/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  Maecenas finibus nec sem ut imperdiet. Ut
-                                  tincidunt est ac dolor aliquam sodales.
-                                  Phasellus sed mauris hendrerit, laoreet sem
-                                  in, lobortis mauris hendrerit ante.
+                                  Built and modernized multiple enterprise
+                                  applications using ASP.NET Core and Angular,
+                                  with strong SQL Server focus.
                                 </p>
                               </div>
                             </div>
@@ -1075,20 +1254,20 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Tips For Personal Portfolio</h4>
+                                    <h4>Continuous Improvement</h4>
                                     <span
-                                      >University of Studies (1997 - 2001)</span
+                                      >Debugging, refactoring, and
+                                      modernization</span
                                     >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.80/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  If you are going to use a passage. Ut
-                                  tincidunt est ac dolor aliquam sodales.
-                                  Phasellus sed mauris hendrerit, laoreet sem
-                                  in, lobortis mauris hendrerit ante.
+                                  Strong focus on maintainability, scalability,
+                                  and upgrading legacy systems into clean API +
+                                  Angular architectures.
                                 </p>
                               </div>
                             </div>
@@ -1103,26 +1282,28 @@
                         class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60"
                       >
                         <div class="content">
-                          <span class="subtitle">2007 - 2010</span>
-                          <h4 class="maintitle">Job Experience</h4>
+                          <span class="subtitle">Highlights</span>
+                          <h4 class="maintitle">What I Work On</h4>
                           <div class="experience-list">
                             <!-- Start Single List  -->
                             <div class="resume-single-list">
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Diploma in Web Development</h4>
-                                    <span>BSE In CSE (2004 - 2008)</span>
+                                    <h4>Enterprise Applications</h4>
+                                    <span
+                                      >ERP, HR, e‑commerce, institute
+                                      systems</span
+                                    >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.70/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  Contrary to popular belief. Ut tincidunt est
-                                  ac dolor aliquam sodales. Phasellus sed mauris
-                                  hendrerit, laoreet sem in, lobortis mauris
-                                  hendrerit ante.
+                                  Building scalable features and dashboards,
+                                  improving query performance, and shipping
+                                  maintainable code.
                                 </p>
                               </div>
                             </div>
@@ -1133,20 +1314,19 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>The Personal Portfolio Mystery</h4>
+                                    <h4>Legacy Modernization</h4>
                                     <span
-                                      >Job at Rainbow-Themes (2008 - 2016)</span
+                                      >VB.NET / Web Forms → ASP.NET Core API +
+                                      Angular</span
                                     >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.95/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  Generate Lorem Ipsum which looks. Ut tincidunt
-                                  est ac dolor aliquam sodales. Phasellus sed
-                                  mauris hendrerit, laoreet sem in, lobortis
-                                  mauris hendrerit ante.
+                                  Migrating legacy modules, designing clean REST
+                                  APIs, and integrating Angular frontends.
                                 </p>
                               </div>
                             </div>
@@ -1157,21 +1337,20 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Diploma in Computer Science</h4>
+                                    <h4>Security &amp; Permissions</h4>
                                     <span
-                                      >Works at Plugin Development (2016 -
-                                      2020)</span
+                                      >JWT authentication + fine‑grained
+                                      RBAC</span
                                     >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>5.00/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  Maecenas finibus nec sem ut imperdiet. Ut
-                                  tincidunt est ac dolor aliquam sodales.
-                                  Phasellus sed mauris hendrerit, laoreet sem
-                                  in, lobortis mauris hendrerit ante.
+                                  Implementing role‑based permissions (Add /
+                                  View / Edit / Delete per screen) to secure
+                                  enterprise workflows.
                                 </p>
                               </div>
                             </div>
@@ -1198,98 +1377,18 @@
                       <div class="col-lg-6 col-md-6 col-12">
                         <div class="progress-wrapper">
                           <div class="content">
-                            <span class="subtitle">Features</span>
-                            <h4 class="maintitle">Design Skill</h4>
+                            <span class="subtitle">Backend</span>
+                            <h4 class="maintitle">Backend Skills</h4>
                             <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
-                              <h6 class="heading heading-h6">PHOTOSHOT</h6>
+                              <h6 class="heading heading-h6">
+                                ASP.NET Core Web API
+                              </h6>
                               <div class="progress">
                                 <div
                                   class="progress-bar wow fadeInLeft"
                                   data-wow-duration="0.5s"
                                   data-wow-delay=".3s"
-                                  role="progressbar"
-                                  style="width: 100%"
-                                  aria-valuenow="85"
-                                  aria-valuemin="0"
-                                  aria-valuemax="100"
-                                >
-                                  <span class="percent-label">100%</span>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-
-                            <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                              <h6 class="heading heading-h6">FIGMA</h6>
-                              <div class="progress">
-                                <div
-                                  class="progress-bar wow fadeInLeft"
-                                  data-wow-duration="0.6s"
-                                  data-wow-delay=".4s"
-                                  role="progressbar"
-                                  style="width: 95%"
-                                  aria-valuenow="85"
-                                  aria-valuemin="0"
-                                  aria-valuemax="100"
-                                >
-                                  <span class="percent-label">95%</span>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-
-                            <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                              <h6 class="heading heading-h6">ADOBE XD</h6>
-                              <div class="progress">
-                                <div
-                                  class="progress-bar wow fadeInLeft"
-                                  data-wow-duration="0.7s"
-                                  data-wow-delay=".5s"
-                                  role="progressbar"
-                                  style="width: 60%"
-                                  aria-valuenow="85"
-                                  aria-valuemin="0"
-                                  aria-valuemax="100"
-                                >
-                                  <span class="percent-label">60%</span>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-
-                            <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                              <h6 class="heading heading-h6">
-                                ADOBE ILLUSTRATOR
-                              </h6>
-                              <div class="progress">
-                                <div
-                                  class="progress-bar wow fadeInLeft"
-                                  data-wow-duration="0.8s"
-                                  data-wow-delay=".6s"
-                                  role="progressbar"
-                                  style="width: 70%"
-                                  aria-valuenow="85"
-                                  aria-valuemin="0"
-                                  aria-valuemax="100"
-                                >
-                                  <span class="percent-label">70%</span>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-
-                            <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                              <h6 class="heading heading-h6">DESIGN</h6>
-                              <div class="progress">
-                                <div
-                                  class="progress-bar wow fadeInLeft"
-                                  data-wow-duration="0.9s"
-                                  data-wow-delay=".7s"
                                   role="progressbar"
                                   style="width: 90%"
                                   aria-valuenow="85"
@@ -1301,25 +1400,17 @@
                               </div>
                             </div>
                             <!-- End Single Progress Charts -->
-                          </div>
-                        </div>
-                      </div>
-                      <!-- End Single Progressbar  -->
 
-                      <!-- Start Single Progressbar  -->
-                      <div class="col-lg-6 col-md-6 col-12 mt_sm--60">
-                        <div class="progress-wrapper">
-                          <div class="content">
-                            <span class="subtitle">Features</span>
-                            <h4 class="maintitle">Development Skill</h4>
                             <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
-                              <h6 class="heading heading-h6">HTML</h6>
+                              <h6 class="heading heading-h6">
+                                Entity Framework Core
+                              </h6>
                               <div class="progress">
                                 <div
                                   class="progress-bar wow fadeInLeft"
-                                  data-wow-duration="0.5s"
-                                  data-wow-delay=".3s"
+                                  data-wow-duration="0.6s"
+                                  data-wow-delay=".4s"
                                   role="progressbar"
                                   style="width: 85%"
                                   aria-valuenow="85"
@@ -1334,27 +1425,9 @@
 
                             <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
-                              <h6 class="heading heading-h6">CSS</h6>
-                              <div class="progress">
-                                <div
-                                  class="progress-bar wow fadeInLeft"
-                                  data-wow-duration="0.6s"
-                                  data-wow-delay=".4s"
-                                  role="progressbar"
-                                  style="width: 80%"
-                                  aria-valuenow="85"
-                                  aria-valuemin="0"
-                                  aria-valuemax="100"
-                                >
-                                  <span class="percent-label">80%</span>
-                                </div>
-                              </div>
-                            </div>
-                            <!-- End Single Progress Charts -->
-
-                            <!-- Start Single Progress Charts -->
-                            <div class="progress-charts">
-                              <h6 class="heading heading-h6">JAVASCRIPT</h6>
+                              <h6 class="heading heading-h6">
+                                Authentication &amp; RBAC (JWT)
+                              </h6>
                               <div class="progress">
                                 <div
                                   class="progress-bar wow fadeInLeft"
@@ -1374,19 +1447,21 @@
 
                             <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
-                              <h6 class="heading heading-h6">SOFTWARE</h6>
+                              <h6 class="heading heading-h6">
+                                SQL Server (Design &amp; Optimization)
+                              </h6>
                               <div class="progress">
                                 <div
                                   class="progress-bar wow fadeInLeft"
                                   data-wow-duration="0.8s"
                                   data-wow-delay=".6s"
                                   role="progressbar"
-                                  style="width: 75%"
+                                  style="width: 85%"
                                   aria-valuenow="85"
                                   aria-valuemin="0"
                                   aria-valuemax="100"
                                 >
-                                  <span class="percent-label">75%</span>
+                                  <span class="percent-label">85%</span>
                                 </div>
                               </div>
                             </div>
@@ -1394,19 +1469,135 @@
 
                             <!-- Start Single Progress Charts -->
                             <div class="progress-charts">
-                              <h6 class="heading heading-h6">PLUGIN</h6>
+                              <h6 class="heading heading-h6">
+                                REST API Design
+                              </h6>
                               <div class="progress">
                                 <div
                                   class="progress-bar wow fadeInLeft"
                                   data-wow-duration="0.9s"
                                   data-wow-delay=".7s"
                                   role="progressbar"
-                                  style="width: 70%"
+                                  style="width: 85%"
                                   aria-valuenow="85"
                                   aria-valuemin="0"
                                   aria-valuemax="100"
                                 >
-                                  <span class="percent-label">70%</span>
+                                  <span class="percent-label">85%</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End Single Progressbar  -->
+
+                      <!-- Start Single Progressbar  -->
+                      <div class="col-lg-6 col-md-6 col-12 mt_sm--60">
+                        <div class="progress-wrapper">
+                          <div class="content">
+                            <span class="subtitle">Frontend</span>
+                            <h4 class="maintitle">Frontend Skills</h4>
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                              <h6 class="heading heading-h6">Angular 18–19</h6>
+                              <div class="progress">
+                                <div
+                                  class="progress-bar wow fadeInLeft"
+                                  data-wow-duration="0.5s"
+                                  data-wow-delay=".3s"
+                                  role="progressbar"
+                                  style="width: 90%"
+                                  aria-valuenow="85"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  <span class="percent-label">90%</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                              <h6 class="heading heading-h6">TypeScript</h6>
+                              <div class="progress">
+                                <div
+                                  class="progress-bar wow fadeInLeft"
+                                  data-wow-duration="0.6s"
+                                  data-wow-delay=".4s"
+                                  role="progressbar"
+                                  style="width: 85%"
+                                  aria-valuenow="85"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  <span class="percent-label">85%</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                              <h6 class="heading heading-h6">Bootstrap</h6>
+                              <div class="progress">
+                                <div
+                                  class="progress-bar wow fadeInLeft"
+                                  data-wow-duration="0.7s"
+                                  data-wow-delay=".5s"
+                                  role="progressbar"
+                                  style="width: 80%"
+                                  aria-valuenow="85"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  <span class="percent-label">80%</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                              <h6 class="heading heading-h6">
+                                Responsive UI &amp; Dashboards
+                              </h6>
+                              <div class="progress">
+                                <div
+                                  class="progress-bar wow fadeInLeft"
+                                  data-wow-duration="0.8s"
+                                  data-wow-delay=".6s"
+                                  role="progressbar"
+                                  style="width: 85%"
+                                  aria-valuenow="85"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  <span class="percent-label">85%</span>
+                                </div>
+                              </div>
+                            </div>
+                            <!-- End Single Progress Charts -->
+
+                            <!-- Start Single Progress Charts -->
+                            <div class="progress-charts">
+                              <h6 class="heading heading-h6">
+                                Debugging &amp; Refactoring
+                              </h6>
+                              <div class="progress">
+                                <div
+                                  class="progress-bar wow fadeInLeft"
+                                  data-wow-duration="0.9s"
+                                  data-wow-delay=".7s"
+                                  role="progressbar"
+                                  style="width: 90%"
+                                  aria-valuenow="85"
+                                  aria-valuemin="0"
+                                  aria-valuemax="100"
+                                >
+                                  <span class="percent-label">90%</span>
                                 </div>
                               </div>
                             </div>
@@ -1432,26 +1623,28 @@
                       <!-- Start Skill List Area  -->
                       <div class="col-lg-6 col-md-12 col-12">
                         <div class="content">
-                          <span class="subtitle">2007 - 2010</span>
-                          <h4 class="maintitle">Education Quality</h4>
+                          <span class="subtitle">Full Time | Present</span>
+                          <h4 class="maintitle">.NET Developer — Logix</h4>
                           <div class="experience-list">
                             <!-- Start Single List  -->
                             <div class="resume-single-list">
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Personal Portfolio April Fools</h4>
-                                    <span>University of DVI (1997 - 2001)</span>
+                                    <h4>Legacy Modernization</h4>
+                                    <span
+                                      >Modernizing legacy ERP systems into
+                                      API-based architectures</span
+                                    >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.30/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  The education should be very interactual. Ut
-                                  tincidunt est ac dolor aliquam sodales.
-                                  Phasellus sed mauris hendrerit, laoreet sem
-                                  in, lobortis mauris hendrerit ante.
+                                  Transforming modules into maintainable
+                                  services with clean API contracts and clear
+                                  responsibilities.
                                 </p>
                               </div>
                             </div>
@@ -1462,20 +1655,19 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Examples Of Personal Portfolio</h4>
+                                    <h4>Migration Work</h4>
                                     <span
-                                      >College of Studies (2000 - 2002)</span
+                                      >Migrating VB.NET Web Forms to ASP.NET
+                                      Core Web APIs</span
                                     >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.50/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  Maecenas finibus nec sem ut imperdiet. Ut
-                                  tincidunt est ac dolor aliquam sodales.
-                                  Phasellus sed mauris hendrerit, laoreet sem
-                                  in, lobortis mauris hendrerit ante.
+                                  Rebuilding endpoints as RESTful APIs consumed
+                                  by Angular frontends.
                                 </p>
                               </div>
                             </div>
@@ -1486,20 +1678,19 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Tips For Personal Portfolio</h4>
+                                    <h4>Security &amp; Permissions</h4>
                                     <span
-                                      >University of Studies (1997 - 2001)</span
+                                      >Implementing role-based access control
+                                      with granular permissions</span
                                     >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.80/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  If you are going to use a passage. Ut
-                                  tincidunt est ac dolor aliquam sodales.
-                                  Phasellus sed mauris hendrerit, laoreet sem
-                                  in, lobortis mauris hendrerit ante.
+                                  Fine‑grained RBAC (Add / View / Edit / Delete
+                                  per screen) aligned to enterprise workflows.
                                 </p>
                               </div>
                             </div>
@@ -1514,26 +1705,27 @@
                         class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60"
                       >
                         <div class="content">
-                          <span class="subtitle">2007 - 2010</span>
-                          <h4 class="maintitle">Job Experience</h4>
+                          <span class="subtitle">Key Contributions</span>
+                          <h4 class="maintitle">Responsibilities</h4>
                           <div class="experience-list">
                             <!-- Start Single List  -->
                             <div class="resume-single-list">
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Diploma in Web Development</h4>
-                                    <span>BSE In CSE (2004 - 2008)</span>
+                                    <h4>Angular Frontends</h4>
+                                    <span
+                                      >Developing Angular UIs for internal
+                                      enterprise systems</span
+                                    >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.70/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  Contrary to popular belief. Ut tincidunt est
-                                  ac dolor aliquam sodales. Phasellus sed mauris
-                                  hendrerit, laoreet sem in, lobortis mauris
-                                  hendrerit ante.
+                                  Building responsive dashboards and screens
+                                  with Bootstrap and reusable components.
                                 </p>
                               </div>
                             </div>
@@ -1544,20 +1736,19 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>The Personal Portfolio Mystery</h4>
+                                    <h4>Performance Improvements</h4>
                                     <span
-                                      >Job at Rainbow-Themes (2008 - 2016)</span
+                                      >Optimizing queries and API response
+                                      times</span
                                     >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.95/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  Generate Lorem Ipsum which looks. Ut tincidunt
-                                  est ac dolor aliquam sodales. Phasellus sed
-                                  mauris hendrerit, laoreet sem in, lobortis
-                                  mauris hendrerit ante.
+                                  Improving SQL Server queries and API
+                                  performance for better UX at scale.
                                 </p>
                               </div>
                             </div>
@@ -1568,21 +1759,19 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Diploma in Computer Science</h4>
+                                    <h4>Team Collaboration</h4>
                                     <span
-                                      >Works at Plugin Development (2016 -
-                                      2020)</span
+                                      >Working with teams to enhance
+                                      maintainability</span
                                     >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>5.00/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  Maecenas finibus nec sem ut imperdiet. Ut
-                                  tincidunt est ac dolor aliquam sodales.
-                                  Phasellus sed mauris hendrerit, laoreet sem
-                                  in, lobortis mauris hendrerit ante.
+                                  Debugging, refactoring, and improving existing
+                                  codebases with a clean, modular approach.
                                 </p>
                               </div>
                             </div>
@@ -1608,8 +1797,8 @@
                       <!-- Start Skill List Area  -->
                       <div class="col-lg-6 col-md-12 col-12">
                         <div class="content">
-                          <span class="subtitle">2007 - 2010</span>
-                          <h4 class="maintitle">Company Experience</h4>
+                          <span class="subtitle">Why Hire Me?</span>
+                          <h4 class="maintitle">Strengths</h4>
                           <div class="experience-list">
                             <!-- Start Single List  -->
                             <div
@@ -1622,18 +1811,20 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Personal Portfolio April Fools</h4>
-                                    <span>University of DVI (1997 - 2001)</span>
+                                    <h4>Real Production Experience</h4>
+                                    <span
+                                      >Enterprise systems, not just
+                                      tutorials</span
+                                    >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.30/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  The education should be very interactual. Ut
-                                  tincidunt est ac dolor aliquam sodales.
-                                  Phasellus sed mauris hendrerit, laoreet sem
-                                  in, lobortis mauris hendrerit ante.
+                                  Strong experience building and modernizing
+                                  real company applications with measurable
+                                  impact.
                                 </p>
                               </div>
                             </div>
@@ -1650,20 +1841,19 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Examples Of Personal Portfolio</h4>
+                                    <h4>Legacy‑to‑Modern Migration</h4>
                                     <span
-                                      >College of Studies (2000 - 2002)</span
+                                      >Understands the challenges deeply</span
                                     >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.50/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  Maecenas finibus nec sem ut imperdiet. Ut
-                                  tincidunt est ac dolor aliquam sodales.
-                                  Phasellus sed mauris hendrerit, laoreet sem
-                                  in, lobortis mauris hendrerit ante.
+                                  Comfortable migrating Web Forms / VB.NET to
+                                  ASP.NET Core APIs + Angular while keeping the
+                                  business running.
                                 </p>
                               </div>
                             </div>
@@ -1680,20 +1870,19 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Tips For Personal Portfolio</h4>
+                                    <h4>Goal‑Oriented Growth</h4>
                                     <span
-                                      >University of Studies (1997 - 2001)</span
+                                      >Aiming to become a high‑level .NET
+                                      specialist</span
                                     >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.80/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  If you are going to use a passage. Ut
-                                  tincidunt est ac dolor aliquam sodales.
-                                  Phasellus sed mauris hendrerit, laoreet sem
-                                  in, lobortis mauris hendrerit ante.
+                                  Focused on mastering system design,
+                                  performance, and secure architectures.
                                 </p>
                               </div>
                             </div>
@@ -1708,8 +1897,8 @@
                         class="col-lg-6 col-md-12 col-12 mt_md--60 mt_sm--60"
                       >
                         <div class="content">
-                          <span class="subtitle">2007 - 2010</span>
-                          <h4 class="maintitle">Job Experience</h4>
+                          <span class="subtitle">Career Goals</span>
+                          <h4 class="maintitle">Long‑Term Vision</h4>
                           <div class="experience-list">
                             <!-- Start Single List  -->
                             <div
@@ -1722,18 +1911,19 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Diploma in Web Development</h4>
-                                    <span>BSE In CSE (2004 - 2008)</span>
+                                    <h4>Build Scalable Systems</h4>
+                                    <span
+                                      >Design modular services and clean
+                                      contracts</span
+                                    >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.70/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  Contrary to popular belief. Ut tincidunt est
-                                  ac dolor aliquam sodales. Phasellus sed mauris
-                                  hendrerit, laoreet sem in, lobortis mauris
-                                  hendrerit ante.
+                                  Continue building scalable enterprise
+                                  architectures with strong maintainability.
                                 </p>
                               </div>
                             </div>
@@ -1750,20 +1940,19 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>The Personal Portfolio Mystery</h4>
+                                    <h4>Lead Systems &amp; Teams</h4>
                                     <span
-                                      >Job at Rainbow-Themes (2008 - 2016)</span
+                                      >Grow into a technical leadership
+                                      role</span
                                     >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>4.95/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  Generate Lorem Ipsum which looks. Ut tincidunt
-                                  est ac dolor aliquam sodales. Phasellus sed
-                                  mauris hendrerit, laoreet sem in, lobortis
-                                  mauris hendrerit ante.
+                                  Long‑term goal to lead systems and build a
+                                  scalable tech business.
                                 </p>
                               </div>
                             </div>
@@ -1780,21 +1969,19 @@
                               <div class="inner">
                                 <div class="heading">
                                   <div class="title">
-                                    <h4>Diploma in Computer Science</h4>
+                                    <h4>Keep Shipping Value</h4>
                                     <span
-                                      >Works at Plugin Development (2016 -
-                                      2020)</span
+                                      >Improve, refactor, and optimize
+                                      continuously</span
                                     >
                                   </div>
                                   <div class="date-of-time">
-                                    <span>5.00/5</span>
+                                    <span>—</span>
                                   </div>
                                 </div>
                                 <p class="description">
-                                  Maecenas finibus nec sem ut imperdiet. Ut
-                                  tincidunt est ac dolor aliquam sodales.
-                                  Phasellus sed mauris hendrerit, laoreet sem
-                                  in, lobortis mauris hendrerit ante.
+                                  Continue strengthening debugging, refactoring
+                                  and performance skills in real projects.
                                 </p>
                               </div>
                             </div>
@@ -1829,8 +2016,10 @@
                 data-aos-once="true"
                 class="section-title text-center"
               >
-                <span class="subtitle">What Clients Say</span>
-                <h2 class="title">Testimonial</h2>
+                <span class="subtitle" data-i18n="testimonial.subtitle"
+                  >What Clients Say</span
+                >
+                <h2 class="title" data-i18n="testimonial.title">Testimonial</h2>
               </div>
             </div>
           </div>
@@ -1850,7 +2039,11 @@
                       <div class="card-thumbnail">
                         <img
                           src="assets/images/testimonial/final-home--1st.png"
-                          alt="Testimonial-image"
+                          alt="Client Testimonial"
+                          loading="lazy"
+                          decoding="async"
+                          width="100"
+                          height="100"
                         />
                       </div>
                       <div class="card-content">
@@ -2152,8 +2345,10 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="section-title">
-                <span class="subtitle">Popular Clients</span>
-                <h2 class="title">Awesome Clients</h2>
+                <span class="subtitle" data-i18n="clients.subtitle"
+                  >Popular Clients</span
+                >
+                <h2 class="title" data-i18n="clients.title">Awesome Clients</h2>
               </div>
             </div>
           </div>
@@ -3628,10 +3823,17 @@
               >
                 <div class="position-sticky sticky-top rbt-sticky-top-adjust">
                   <div class="section-title text-left">
-                    <span class="subtitle text-center text-lg-left"
+                    <span
+                      class="subtitle text-center text-lg-left"
+                      data-i18n="pricing.subtitle"
                       >Pricing</span
                     >
-                    <h2 class="title text-center text-lg-left">My Pricing</h2>
+                    <h2
+                      class="title text-center text-lg-left"
+                      data-i18n="pricing.title"
+                    >
+                      My Pricing
+                    </h2>
                   </div>
                 </div>
               </div>
@@ -3650,6 +3852,7 @@
                       role="tab"
                       aria-controls="test"
                       aria-selected="false"
+                      data-i18n="pricing.tab.static"
                       >Static</a
                     >
                   </li>
@@ -3663,6 +3866,7 @@
                       role="tab"
                       aria-controls="profile"
                       aria-selected="true"
+                      data-i18n="pricing.tab.standard"
                       >Standard</a
                     >
                   </li>
@@ -3675,6 +3879,7 @@
                       role="tab"
                       aria-controls="contact"
                       aria-selected="false"
+                      data-i18n="pricing.tab.premium"
                       >Premium</a
                     >
                   </li>
@@ -3990,10 +4195,10 @@
                 data-aos-once="true"
                 class="section-title text-center"
               >
-                <span class="subtitle"
+                <span class="subtitle" data-i18n="blog.subtitle"
                   >Visit my blog and keep your feedback</span
                 >
-                <h2 class="title">My Blog</h2>
+                <h2 class="title" data-i18n="blog.title">My Blog</h2>
               </div>
             </div>
           </div>
@@ -4140,8 +4345,12 @@
           <div class="row">
             <div class="col-lg-12">
               <div class="section-title text-center">
-                <span class="subtitle">Contact</span>
-                <h2 class="title">Contact With Me</h2>
+                <span class="subtitle" data-i18n="contact.subtitle"
+                  >Contact</span
+                >
+                <h2 class="title" data-i18n="contact.contactMe">
+                  Contact With Me
+                </h2>
               </div>
             </div>
           </div>
@@ -4156,21 +4365,26 @@
                   />
                 </div>
                 <div class="title-area">
-                  <h4 class="title">Nevine Acotanza</h4>
+                  <h4 class="title">
+                    <span data-i18n="hero.Osama">Osama Algumaei</span>
+                  </h4>
                   <span>Chief Operating Officer</span>
                 </div>
                 <div class="description">
                   <p>
-                    I am available for freelance work. Connect with me via and
-                    call in to my account.
+                    <span data-i18n="contact.available"
+                      >I am available for freelance work. Connect with me via
+                      and call in to my account.</span
+                    >
                   </p>
                   <span class="phone"
-                    >Phone: <a href="tel:01941043264">+01234567890</a></span
+                    ><span data-i18n="contact.phone">Phone:</span>
+                    <a href="tel:967777808967">+967-777-808-967</a></span
                   >
                   <span class="mail"
-                    >Email:
-                    <a href="mailto:admin@example.com"
-                      >admin@example.com</a
+                    ><span data-i18n="contact.email">Email:</span>
+                    <a href="mailto:algumaeiosama.com"
+                      >algumaeiosama.com</a
                     ></span
                   >
                 </div>
@@ -4201,6 +4415,7 @@
                           name="contact-name"
                           id="contact-name"
                           type="text"
+                          required
                         />
                       </div>
                     </div>
@@ -4225,6 +4440,7 @@
                           id="contact-email"
                           name="contact-email"
                           type="email"
+                          required
                         />
                       </div>
                     </div>
@@ -4237,6 +4453,7 @@
                           id="subject"
                           name="subject"
                           type="text"
+                          required
                         />
                       </div>
                     </div>
@@ -4249,6 +4466,7 @@
                           id="contact-message"
                           cols="30"
                           rows="10"
+                          required
                         ></textarea>
                       </div>
                     </div>
@@ -4260,7 +4478,9 @@
                         id="submit"
                         class="rn-btn"
                       >
-                        <span>SEND MESSAGE</span>
+                        <span data-i18n="contact.sendMessage"
+                          >SEND MESSAGE</span
+                        >
                         <i data-feather="arrow-right"></i>
                       </button>
                     </div>
@@ -4557,11 +4777,7 @@
                               </mark>
                             </a>
                           </div>
-                          <a
-                            href="https://themeforest.net/user/rainbow-themes"
-                            class="rn-btn"
-                            target="_blank"
-                          >
+                          <a href="#portfolio" class="rn-btn">
                             <span>VIEW PROJECT</span>
                             <i class="feather-arrow-right-circle"></i
                           ></a>
@@ -4723,7 +4939,7 @@
         aria-hidden="true"
       >
         <div
-          class="modal-dialog modal-dialog-centered modal-news"
+          class="modal-dialog modal-dialog-centered modal-news modal-xl"
           role="document"
         >
           <div class="modal-content">
@@ -4790,27 +5006,46 @@
 
               <!-- Comment Section Area Start -->
               <div class="comment-inner">
-                <h3 class="title mb--40 mt--50">Leave a Reply</h3>
+                <h3 class="title mb--40 mt--50" data-i18n="blog.leaveReply">
+                  Leave a Reply
+                </h3>
                 <form action="#">
                   <div class="row">
                     <div class="col-lg-6 col-md-12 col-12">
                       <div class="rnform-group">
-                        <input type="text" placeholder="Name" />
+                        <input
+                          type="text"
+                          placeholder="Name"
+                          data-i18n-placeholder="form.name"
+                        />
                       </div>
                       <div class="rnform-group">
-                        <input type="email" placeholder="Email" />
+                        <input
+                          type="email"
+                          placeholder="Email"
+                          data-i18n-placeholder="form.email"
+                        />
                       </div>
                       <div class="rnform-group">
-                        <input type="text" placeholder="Website" />
+                        <input
+                          type="text"
+                          placeholder="Website"
+                          data-i18n-placeholder="form.website"
+                        />
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-12 col-12">
                       <div class="rnform-group">
-                        <textarea placeholder="Comment"></textarea>
+                        <textarea
+                          placeholder="Comment"
+                          data-i18n-placeholder="form.comment"
+                        ></textarea>
                       </div>
                     </div>
                     <div class="col-lg-12">
-                      <a class="rn-btn" href="#"><span>SUBMIT NOW</span></a>
+                      <a class="rn-btn" href="#"
+                        ><span data-i18n="blog.submitNow">SUBMIT NOW</span></a
+                      >
                     </div>
                   </div>
                 </form>
@@ -4866,6 +5101,7 @@
             >
               <iframe
                 loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"
                 style="
                   position: absolute;
                   width: 100%;
@@ -4876,17 +5112,17 @@
                   padding: 0;
                   margin: 0;
                 "
-                src="https://www.canva.com/design/DAGVDYL_HH0/xYGo5GJOrIDlmLdpVU1kqA/view?embed"
+                src="https://www.canva.com/design/DAG8bUvltCY/K3I1pVwhkABuiTbZtsQh4w/view?embed"
                 allowfullscreen="allowfullscreen"
                 allow="fullscreen"
               >
               </iframe>
             </div>
             <a
-              href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGVDYL_HH0&#x2F;xYGo5GJOrIDlmLdpVU1kqA&#x2F;view?utm_content=DAGVDYL_HH0&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link"
+              href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAG8bUvltCY&#x2F;K3I1pVwhkABuiTbZtsQh4w&#x2F;view?utm_content=DAG8bUvltCY&amp;utm_campaign=designshare&amp;utm_medium=link2&amp;utm_source=uniquelinks&amp;utlId=h5329b6f080"
               target="_blank"
               rel="noopener"
-              >blue professional modern CV resume</a
+              ><span data-i18n="resume.openInCanva">Open in Canva</span></a
             >
             by Osama Abdu Ahmed Abduallah Al-gumaei
             <!-- End of .modal-body -->
@@ -5865,43 +6101,56 @@
     </main>
 
     <!-- Start Footer Area -->
-    <div class="rn-footer-area rn-section-gap section-separator">
+    <footer
+      class="rn-footer-area rn-section-gap section-separator"
+      role="contentinfo"
+      aria-label="Site footer"
+    >
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
             <div class="footer-area text-center">
               <div class="logo">
                 <a href="index.html">
-                  <img src="assets/images/logo/logos-circle.png" alt="logo" />
+                  <img
+                    src="assets/images/logo/logos-circle.png"
+                    alt="Osama Algumaei Logo"
+                    width="100"
+                    height="100"
+                  />
                 </a>
               </div>
               <p class="description mt--30">
-                © 2024. All rights reserved by
-                <a
-                  target="_blank"
-                  href="https://themeforest.net/user/OsamaSmart-Themes/portfolio"
-                  >OsamaSmart-Themes.</a
-                >
+                © <span id="current-year">2024</span>.
+                <span data-i18n="footer.rights">All rights reserved by</span>
+                <span data-i18n="hero.Osama">Osama Algumaei</span>.
               </p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </footer>
     <!-- End Footer Area -->
 
     <!-- JS ============================================ -->
-    <script src="assets/js/vendor/jquery.js"></script>
-    <script src="assets/js/vendor/modernizer.min.js"></script>
-    <script src="assets/js/vendor/feather.min.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/bootstrap.js"></script>
-    <script src="assets/js/vendor/text-type.js"></script>
-    <script src="assets/js/vendor/wow.js"></script>
-    <script src="assets/js/vendor/aos.js"></script>
-    <script src="assets/js/vendor/particles.js"></script>
-    <script src="assets/js/vendor/jquery-one-page-nav.js"></script>
+    <script src="assets/js/language.js" defer></script>
+    <script src="assets/js/vendor/jquery.js" defer></script>
+    <script src="assets/js/vendor/modernizer.min.js" defer></script>
+    <script src="assets/js/vendor/feather.min.js" defer></script>
+    <script src="assets/js/vendor/slick.min.js" defer></script>
+    <script src="assets/js/vendor/bootstrap.js" defer></script>
+    <script src="assets/js/vendor/text-type.js" defer></script>
+    <script src="assets/js/vendor/wow.js" defer></script>
+    <script src="assets/js/vendor/aos.js" defer></script>
+    <script src="assets/js/vendor/particles.js" defer></script>
+    <script src="assets/js/vendor/jquery-one-page-nav.js" defer></script>
     <!-- main JS -->
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
+
+    <!-- Auto-update copyright year -->
+    <script>
+      document.getElementById("current-year").textContent =
+        new Date().getFullYear();
+    </script>
   </body>
 </html>
